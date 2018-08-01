@@ -4,7 +4,7 @@
 
 # React :heart: React Native :yellow_heart: Express :green_heart: MySQL
 
-## _**Tutorial will be available soon! :pray:**_
+## _**Tutorial will be available soon!**_ :pray:
 
 #
 
