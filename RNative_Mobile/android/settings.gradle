@@ -1,0 +1,3 @@
+rootProject.name = 'RNative_Mobile'
+
+include ':app'
