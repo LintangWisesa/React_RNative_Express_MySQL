@@ -11,7 +11,7 @@ constructor(){
   }
 
 klikPost(){
-    var url = 'http://192.168.1.143:3210/data';
+    var url = 'http://192.168.16.2:3210/data';
     axios.post(url, {
       nama: this.state.input1,
       usia: this.state.input2
@@ -27,7 +27,7 @@ klikPost(){
   };
   
   klikGet(){
-    var url = 'http://192.168.1.143:3210/data';
+    var url = 'http://192.168.16.2:3210/data';
     axios.get(url)
     .then((ambilData) => {
       console.log(ambilData.data);

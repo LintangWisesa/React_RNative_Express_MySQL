@@ -4,6 +4,8 @@
 
 # React :heart: React Native :yellow_heart: Express :green_heart: MySQL
 
+[![Video](https://img.youtube.com/vi/Cd36rmV0N18/0.jpg)](https://www.youtube.com/watch?v=Cd36rmV0N18)
+
 ## _**Tutorial will be available soon!**_ :pray:
 
 #
