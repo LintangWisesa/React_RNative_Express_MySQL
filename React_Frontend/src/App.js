@@ -13,7 +13,7 @@ class App extends Component {
 
 klikPost = (e) => {
   e.preventDefault();
-  var url = 'http://localhost:3210/data';
+  let url = 'http://localhost:3210/data';
   axios.post(url, {
     nama: this.inputnama.value,
     usia: this.inputusia.value
@@ -30,7 +30,7 @@ klikPost = (e) => {
 
 klikGet = (e) => {
   e.preventDefault();
-  var url = 'http://localhost:3210/data';
+  let url = 'http://localhost:3210/data';
   axios.get(url)
   .then((ambilData) => {
     console.log(ambilData.data);
@@ -42,7 +42,7 @@ klikGet = (e) => {
 
 render() {
   const dataMySQL = this.state.dataku.map((item, index)=>{
-    var arrayku = ['Nama: ',item.nama,', Usia: ', item.usia, ' th.'].join(' ');
+    let arrayku = ['Nama: ',item.nama,', Usia: ', item.usia, ' th.'].join(' ');
     return <p key={index}>{arrayku}</p>;
   })
   return (
