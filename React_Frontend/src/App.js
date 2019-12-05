@@ -4,14 +4,14 @@ import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip'
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
+   
+     
+    state = {
       dataku: [],
     };
-}
+ 
 
-klikPost(e){
+klikPost = (e) => {
   e.preventDefault();
   var url = 'http://localhost:3210/data';
   axios.post(url, {
@@ -28,7 +28,7 @@ klikPost(e){
   this.inputusia.value = '';
 };
 
-klikGet(e){
+klikGet = (e) => {
   e.preventDefault();
   var url = 'http://localhost:3210/data';
   axios.get(url)
@@ -42,7 +42,7 @@ klikGet(e){
 
 render() {
   const dataMySQL = this.state.dataku.map((item, index)=>{
-    var arrayku = ['Nama: ',item.Nama,', Usia: ', item.Usia, ' th.'].join(' ');
+    var arrayku = ['Nama: ',item.nama,', Usia: ', item.usia, ' th.'].join(' ');
     return <p key={index}>{arrayku}</p>;
   })
   return (
@@ -66,10 +66,10 @@ render() {
   </div>
   
   <button className="btn btn-primary" style={{width:'100px'}}
-  onClick={this.klikPost.bind(this)}>POST</button>
+  onClick={this.klikPost}>POST</button>
   
   <button className="btn btn-success" style={{margin:'15px',width:'100px'}}
-  onClick={this.klikGet.bind(this)}>GET</button>
+  onClick={this.klikGet}>GET</button>
 
 </form>
 
